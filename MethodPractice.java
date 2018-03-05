@@ -129,11 +129,13 @@ class MethodPractice2{
 		while(true){
 			try{
 				int n = sc.nextInt();
+				sc.nextLine();
 				if(n == -1)
 					return ret;
 				ret++;
 			}catch(Exception e){
 				System.out.println("Enter an int please");
+				sc.nextLine();
 			}
 			
 
@@ -175,6 +177,7 @@ class GuessingGame{
 			System.out.print(">");
 				try{
 					int n = sc.nextInt();
+					sc.nextLine();
 					if(n == num){
 						System.out.printf("You found it in %d tries\n",attempts);
 						return;
@@ -185,6 +188,7 @@ class GuessingGame{
 					attempts++;
 				}catch(Exception e){
 					System.out.println("Enter an int please");
+					sc.nextLine();
 				}
 		}
 	}
